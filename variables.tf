@@ -1,5 +1,5 @@
 variable "parameter_read" {
-  type        = list(string)
+  type        = list
   description = "List of parameters to read from SSM. These must already exist otherwise an error is returned. Can be used with `parameter_write` as long as the parameters are different."
   default     = []
 }
