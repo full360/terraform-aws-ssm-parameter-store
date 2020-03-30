@@ -1,11 +1,11 @@
 variable "parameter_read" {
-  type        = list
+  type        = list(any)
   description = "List of parameters to read from SSM. These must already exist otherwise an error is returned. Can be used with `parameter_write` as long as the parameters are different."
   default     = []
 }
 
 variable "parameter_write" {
-  type = list
+  type = list(any)
 
   description = <<DESC
   List of maps with the Parameter values in this format.
